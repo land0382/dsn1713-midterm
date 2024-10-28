@@ -4,199 +4,279 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Midterm Assignment</title>
-    <!-- Include Bootstrap JS cdn link -->
+    https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
 
-    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 
     <header>
-      
-    </header>
-
+      <nav style="background-color: #2e483a; color: white; padding: 1rem; position: sticky; top: 0;">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+              <a href="#" style="display: flex; align-items: center; text-decoration: none; color: white;">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="auto">
+                      <defs>
+                          <style>
+                              .cls-1 {
+                                  fill: #f6f3ed; /* Fill color for the SVG */
+                              }
+                          </style>
+                      </defs>
+                      <g>
+                          <g id="Layer_1">
+                              <path class="cls-1" d="M7,22v-9.2c-.9-.2-1.6-.7-2.1-1.4s-.9-1.5-.9-2.5V2h2v7h1V2h2v7h1V2h2v7c0,.9-.3,1.8-.9,2.5s-1.3,1.2-2.1,1.4v9.2h-2ZM17,22v-8h-3v-7c0-1.4.5-2.6,1.5-3.5s2.2-1.5,3.5-1.5v20h-2Z"/>
+                          </g>
+                      </g>
+                  </svg>
+                  <span class="logo-title" style="margin-left: 0.5rem;">Daily Dish</span>
+              </a>
+              <div style="display: flex;">
+                  <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+                      <li style="margin-right: 1rem;"><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+                      <li style="margin-right: 1rem;"><a href="#" style="color: white; text-decoration: none;">Menu Plans</a></li>
+                      <li style="margin-right: 1rem;"><a href="#" style="color: white; text-decoration: none;">How it Works</a></li>
+                      <li style="margin-right: 1rem;"><a href="#" style="color: white; text-decoration: none;">Our Recipes</a></li>
+                      <li><a href="#" style="color: white; text-decoration: none;">Contact Us</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+  
+    
 
     <main>
 
       <section id="hero">
-        <div> 
-          <div>
-            <div>
-              <h1>Healthy, Delicious Meals Delivered to Your Door – Ready in Minutes!</h1>
-              <p>With Daily Dish, you can enjoy chef-crafted, wholesome meals without the hassle of meal prep, grocery shopping, or cleanup.</p>
-              <button>Get Started Today and Save Time!</button>
+        <div class="hero-image">
+            <img src="images/hero-bg-img.png" alt="Hero Background" class="img-fluid">
+            <div class="text-overlay">
+                <h1>Healthy, Delicious Meals Delivered to Your Door – Ready in Minutes!</h1>
+                <p>With Daily Dish, you can enjoy chef-crafted, wholesome meals without the hassle of meal prep, grocery shopping, or cleanup.</p>
+                <button>Get Started Today and Save Time!</button>
             </div>
-          </div>
         </div>
-      </section>
-
-      <section>
-        <div>
-          <h2>How it Works</h2>
+    </section>
+    
+    
+    <section>
+      <div class="how-it-works">
+          <h2 class="how-it-works-title">How it Works</h2>
           <p>Say goodbye to meal planning stress! With Daily Dish, you’ll enjoy chef-crafted meals made from fresh, natural ingredients, delivered right to your door—ready to cook in minutes.</p>
-          <div>
-            <div>
-              <div>
-                <img src="images/meal.svg" alt="" width="100" height="auto">
+          <div class="steps-container">
+              <div class="step">
+                  <div class="icon">
+                      <img src="images/svg/meal.svg" alt="" width="100" height="auto">
+                  </div>
+                  <h3 class="how-it-works-title">Choose Your Menu</h3>
+                  <p>Explore a wide variety of delicious meal options, tailored to your dietary preferences—whether you're vegan, low-carb, or just looking for wholesome comfort food.</p>
               </div>
-              <h3>Choose Your Menu</h3>
-              <p>Explore a wide variety of delicious meal options, tailored to your dietary preferences—whether you're vegan, low-carb, or just looking for wholesome comfort food.</p>
-            </div>
-            <div>
-              <div>
-                <img src="images/vegetables.svg" alt="" width="100" height="auto">
+              <div class="step">
+                  <div class="icon">
+                      <img src="images/svg/vegetables.svg" alt="" width="100" height="auto">
+                  </div>
+                  <h3 class="how-it-works-title">Fresh Ingredients Delivered</h3>
+                  <p>We source the freshest, highest-quality ingredients and deliver them in perfectly portioned kits. No waste, no hassle.</p>
               </div>
-              <h3>Fresh Ingredients Delivered</h3>
-              <p>We source the freshest, highest-quality ingredients and deliver them in perfectly portioned kits. No waste, no hassle.</p>
-            </div>
-            <div>
-              <div>
-                <img src="images/plate-fork-spoon.svg" alt="" width="100" height="auto">
+              <div class="step">
+                  <div class="icon">
+                      <img src="images/svg/plate-fork-spoon.svg" alt="" width="100" height="auto">
+                  </div>
+                  <h3 class="how-it-works-title">Cook & Enjoy</h3>
+                  <p>Our easy-to-follow recipes mean you’ll have a mouthwatering, home-cooked meal ready in under 30 minutes—no kitchen skills required!</p>
               </div>
-              <h3>Cook & Enjoy</h3>
-              <p>Our easy-to-follow recipes mean you’ll have a mouthwatering, home-cooked meal ready in under 30 minutes—no kitchen skills required!</p>
-            </div>
           </div>
           <button>Pick Your Plan</button>
-        </div>
-      </section>
+      </div>
+  </section>
+    
       
-      <section>
+      <section class="healthy-eating-section">
         <div>
-          <h2>The Smarter Way to Eat Healthy</h2>
-          <div>
-            <div>
-              <img class="" src="images/family-eating.png" alt="Family enjoying dinner">
+            <div class="separator"></div>
+            <h2>The Smarter Way to Eat Healthy</h2>
+            <div class="content-container">
+                <div class="image-container">
+                    <img class="responsive-image" src="images/family-eating.png" alt="Family enjoying dinner">
+                </div>
+                <div class="text-container">
+                    <div class="text-item">
+                        <h3>Save Time & Stress</h3>
+                        <p>Skip the grocery store and meal prep. Everything you need is delivered—so you can focus on living, not planning.</p>
+                    </div>
+                    <div class="text-item">
+                        <h3>Balanced & Nutritious</h3>
+                        <p>Each recipe is carefully crafted by nutrition experts and chefs to provide well-balanced, nourishing meals.</p>
+                    </div>
+                    <div class="text-item">
+                        <h3>Customize Your Box</h3>
+                        <p>Whether you’re cooking for yourself or a family, our plans are flexible and adjustable to meet your unique needs.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-              <ul>
-                <li>
-                  <h3>Save Time & Stress</h3>
-                  <p>Skip the grocery store and meal prep. Everything you need is delivered—so you can focus on living, not planning.</p>
-                </li>
-                <li>
-                  <h3>Balanced & Nutritious</h3>
-                  <p>Each recipe is carefully crafted by nutrition experts and chefs to provide well-balanced, nourishing meals.</p>
-                </li>
-                <li>
-                  <h3>Customize Your Box</h3>
-                  <p>Whether you’re cooking for yourself or a family, our plans are flexible and adjustable to meet your unique needs.</p>
-                </li>
-              </ul>
-            </div>
-          </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+
+
+    <section>
+      <div>
           
-        </div>
-      </section>
-
-
-      <section>
-        <div>
-          <div>
-            <h2>What Our Customers Are Saying</h2>
-
-            <div>
-              <div>
-                <figure>
-                  <img src="images/sarah.jpg" alt="Profile picture of Sarah" width="100" height="100">
-                  <blockquote>
-                    <p>"Daily Dish has completely changed how I eat during the week. The meals are so easy, and the flavors are incredible!"</p>
-                  </blockquote>
-                  <figcaption>
-                    Sarah, Busy Professional
-                  </figcaption>
-                </figure>
+          <div class="testimonials-container">
+            <h2 class="testimonials-title">What Our Customers Are Saying</h2>
+              <div class="testimonial-item">
+                  <figure>
+                      <img src="images/sarah.jpg" alt="Profile picture of Sarah" width="100" height="100">
+                      <blockquote>
+                          <p>"Daily Dish has completely changed how I eat during the week. The meals are so easy, and the flavors are incredible!"</p>
+                      </blockquote>
+                      <figcaption>
+                          <span class="quoter">Sarah, Busy Professional</span>
+                      </figcaption>
+                  </figure>
               </div>
-              <div>
-                <figure>
-                  <img src="images/tom.jpg" alt="Profile picture of Tom" width="100" height="100">
-                  <blockquote>
-                    <p>"I love that I can adjust the menu to fit my family’s preferences. Daily Dish makes healthy eating simple for all of us."</p>
-                  </blockquote>
-                  <figcaption>
-                    Tom, Father of Two
-                  </figcaption>
-                </figure>
+              <div class="testimonial-item">
+                  <figure>
+                      <img src="images/tom.jpg" alt="Profile picture of Tom" width="100" height="100">
+                      <blockquote>
+                          <p>"I love that I can adjust the menu to fit my family’s preferences. Daily Dish makes healthy eating simple for all of us."</p>
+                      </blockquote>
+                      <figcaption>
+                          <span class="quoter">Tom, Father of Two</span>
+                      </figcaption>
+                  </figure>
               </div>
-              <div>
-                <figure>
-                  <img src="images/julia.jpg" alt="Profile picture of Julia" width="100" height="100">
-                  <blockquote>
-                    <p>"As someone who’s new to cooking, I was nervous at first but Daily Dish makes it so easy."</p>
-                  </blockquote>
-                  <figcaption>
-                    Julia, Novice Cook
-                  </figcaption>
-                </figure>
+              <div class="testimonial-item">
+                  <figure>
+                      <img src="images/julia.jpg" alt="Profile picture of Julia" width="100" height="100">
+                      <blockquote>
+                          <p>"As someone who’s new to cooking, I was nervous at first but Daily Dish makes it so easy."</p>
+                      </blockquote>
+                      <figcaption>
+                          <span class="quoter">Julia, Novice Cook</span>
+                      </figcaption>
+                  </figure>
               </div>
-              
-            </div>
-
           </div>
-        </div>
-      </section>
-
-
-      <section>
+      </div>
+  </section>
+  
+    
+      <section class="faq-section">
         <div>
-          <div>
             <h2>Questions? We Have Answers</h2>
-
-            <!-- Include accordian component that best matches what is included in the provided screenshot.
-
-            Text to include:
-
-            Can I pause or cancel my subscription?
-
-            Absolutely! You can pause, modify, or cancel your subscription at any time through your account dashboard.
-
-
-            How long do the meals last?
-
-            Our meals stay fresh in your fridge for up to 5 days. Each meal comes with a ‘best by’ date for optimal freshness.
-
-
-            Do you offer meals for specific diets?
-
-            Yes! We offer meals for a variety of diets, including vegetarian, keto, paleo, and gluten-free. -->
-
-              
-          </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Can I pause or cancel my subscription?</h3>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Absolutely! You can pause, modify, or cancel your subscription at any time through your account dashboard.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>How long do the meals last?</h3>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our meals stay fresh in your fridge for up to 5 days. Each meal comes with a 'best by' date for optimal freshness.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Do you offer meals for specific diets?</h3>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes! We offer meals for a variety of diets, including vegetarian, keto, paleo, and gluten-free.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
+    
 
-
-      <section id="cta">
+      
+      
+    
+    <section id="cta" style="text-align: center; padding: 100px 20px; background-image: url('images/cta-bg.png'); background-size: cover; background-position: center; color: white;">
         <div>
-          <div>
-            <h2>Join Thousands of Time-Savers – Start Eating Better Today!</h2>
-            <button>Sign Up and Get 30% Off Your First Week</button>
-          </div>
+            <h2 style="margin-bottom: 20px; font-size: 2rem;">
+                Join Thousands of Time-Savers – Start Eating Better Today!
+            </h2>
+            <button style="color: #fff; background-color: #2e483a; border: none; padding: 15px 30px; font-size: 1.2rem; cursor: pointer; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#d95a26'" onmouseout="this.style.backgroundColor='#e65c2e'">
+                Sign Up and Get 30% Off Your First Week
+            </button>
         </div>
-      </section>
+    </section>
+    
+    
+    
+    
+    
 
     </main>
 
+    <footer style="background-color: #2e483a; padding: 20px;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; align-items: center;">
+              <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="auto" fill="white">
+                      <path d="M7,22v-9.2c-.9-.2-1.6-.7-2.1-1.4s-.9-1.5-.9-2.5V2h2v7h1V2h2v7h1V2h2v7c0,.9-.3,1.8-.9,2.5s-1.3,1.2-2.1,1.4v9.2h-2ZM17,22v-8h-3v-7c0-1.4.5-2.6,1.5-3.5s2.2-1.5,3.5-1.5v20h-2Z"/>
+                  </svg>
+              </a>
+              <div style="color: white; margin-left: 10px;">&copy; 2024 Company, Inc</div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+              <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="auto" fill="white">
+                      <path d="M12 2.163c-6.703 0-12.122 5.42-12.122 12.122 0 6.7 5.42 12.122 12.122 12.122 6.703 0 12.122-5.42 12.122-12.122 0-6.703-5.419-12.122-12.122-12.122zm0 22.307c-5.617 0-10.186-4.57-10.186-10.186 0-5.617 4.569-10.186 10.186-10.186 5.617 0 10.186 4.569 10.186 10.186 0 5.616-4.569 10.186-10.186 10.186zm4.814-12.174h-2.454c.036-1.121-.026-2.437-1.254-2.437-1.183 0-1.36.932-1.36 1.894v2.121h-2.18v2.764h2.18v7.428h2.764v-7.428h2.56l.417-2.764zm-4.814 6.898c-.824 0-1.485-.662-1.485-1.486 0-.822.661-1.484 1.485-1.484.825 0 1.486.662 1.486 1.484 0 .824-.661 1.486-1.486 1.486z"/>
+                  </svg>
+              </a>
+              <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="auto" fill="white">
+                      <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.35c0 .732.593 1.325 1.325 1.325h21.35c.732 0 1.325-.593 1.325-1.325v-21.35c0-.732-.593-1.325-1.325-1.325zm-14.184 22.578h-3.054v-9.168h3.054v9.168zm-1.527-10.465c-1.034 0-1.873-.839-1.873-1.873s.839-1.873 1.873-1.873 1.873.839 1.873 1.873-.839 1.873-1.873 1.873zm12.241 10.465h-3.054v-4.891c0-1.167-.025-2.672-1.627-2.672-1.629 0-1.874 1.279-1.874 2.598v5.965h-3.054v-9.168h2.935v1.246h.042c.409-.775 1.411-1.594 2.891-1.594 3.095 0 3.663 2.030 3.663 4.662v5.855z"/>
+                  </svg>
+              </a>
+          </div>
+      </div>
+  </footer>
+  
+
 
     
-    <footer>
-      <div>
-        <div>
-          <div>
-            <a href="/">
-              <img src="images/daily-dish-logo.svg" alt="Logo" width="35" height="auto">
-            </a>
-            <span>&copy; 2024 Company, Inc</span>
-          </div>
-      
-          <ul>
-            <li><a href="#"><img src="images/instagram.svg" alt="Instagram logo" width="35" height="auto"></a></li>
-            <li><a href="#"><img src="images/facebook.svg" alt="Facebook logo" width="35" height="auto"></a></li>
-          </ul>
-        </div>    
-      </div>
-    </footer>
     
+  <script>
+    function toggleAccordion(header) {
+        const content = header.nextElementSibling;
+        const isActive = content.style.maxHeight; // Check if content is already expanded
     
-    <!-- Include Bootstrap JS cdn link -->
+        // Close all accordions first
+        const allContents = document.querySelectorAll('.accordion-content');
+        allContents.forEach((item) => {
+            item.style.maxHeight = null; // Collapse all items
+        });
+    
+        // Toggle the clicked accordion
+        if (!isActive) {
+            content.style.maxHeight = content.scrollHeight + "px"; // Expand the current item
+        } else {
+            content.style.maxHeight = null; // Collapse if it's already open
+        }
+    }
+  </script>
+
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+  
   </body>
 </html>
